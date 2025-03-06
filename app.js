@@ -18,4 +18,5 @@ app.use(cors());
 app.use('/api/v1/', patientRoutes);
 app.use('/api/v1/', appointmentRoutes);
 
+
 module.exports = app;
