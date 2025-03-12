@@ -2,9 +2,9 @@ const express = require("express");
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
-const patientRoutes = require('./server/routes/patientRoutes');
-const appointmentRoutes = require('./server/routes/appointmentRoutes');
-const connectToMongoDB = require('./server/config/db');
+const patientRoutes = require('./routes/patientRoutes');
+const appointmentRoutes = require('./routes/appointmentRoutes');
+const connectToMongoDB = require('./config/db');
 
 const cors = require("cors");
 const app = express();

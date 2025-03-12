@@ -1,0 +1,126 @@
+/* Main container for the form with gradient background */
+.getpatientinfo {
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb); /* Your provided gradient */
+  min-height: 100vh; /* Ensure it takes full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items from the top */
+  font-family: Arial, sans-serif;
+  position: relative; /* For absolute positioning of the back button */
+}
+
+/* Form container with card-like styling in landscape */
+.getpatientinfo-form-container {
+  max-width: 800px; /* Wider for landscape */
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 500px; /* Fixed height for landscape feel, adjust as needed */
+}
+
+/* Center the heading */
+.getpatientinfo-center-text {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Back button styling (outside card, top-left) */
+.back-button-getpatientinfo {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: block;
+  text-align: center;
+  width: 100px;
+  position: absolute;
+  top: 40px; /* Adjusted to be above the card */
+  left: 20px;
+  z-index: 1; /* Ensure it stays above other elements */
+}
+
+.back-button-getpatientinfo:hover {
+  background-color: #0056b3;
+}
+
+/* Form styling with landscape layout */
+.getpatientinfo-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns for landscape */
+  gap: 15px;
+  padding: 10px;
+  min-height: 400px; /* Ensure form takes up enough space */
+}
+
+/* Form group styling for grouping inputs */
+.getpatientinfo-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Label styling */
+.getpatientinfo-label {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Input styling */
+.getpatientinfo-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.getpatientinfo-input[readonly] {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Button group styling */
+.getpatientinfo-button-group {
+  grid-column: 1 / -1; /* Span across both columns */
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+  align-self: flex-end; /* Push buttons to the bottom */
+}
+
+.getpatientinfo-button-group button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+.getpatientinfo-button-group button:first-child {
+  background-color: #007bff;
+  color: white;
+}
+
+.getpatientinfo-button-group button:first-child:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}

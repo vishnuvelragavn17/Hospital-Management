@@ -51,6 +51,7 @@ function GetPatientPage() {
   );
 }
 
+
 export default GetPatientPage;
 
 

@@ -1,16 +1,17 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import PatientActions from "./PatientdropDown";
-import CreatePatientPage from "./CreatePatientPage";
-import GetPatientPage from "./GetPatientPage";
-import PatientInfoPage from "./PatientInfoPage";
-import AppointmentActions from "./Appointmentdropdown";
-import CreateAppointmentPage from "./CreateAppointmentPage";
-import GetAppointmentPage from "./GetAppointmentPage";
-import AppointmentInfoPages from "./AppointmentInfoPage";
-import ExampleComponent from "./ExampleComponent";
-import ExampleAppointment from "./ExampleAppointment";
+import PatientActions from "./components/PatientDropDown/PatientdropDown";
+import CreatePatientPage from "./components/CreatePatient/CreatePatientPage";
+import GetPatientPage from "./components/GetPatient/GetPatientPage";
+import PatientInfoPage from "./components/GetPatient/PatientInfoPage";
+import AppointmentActions from "./components/AppointmentDropDown/Appointmentdropdown";
+import CreateAppointmentPage from "./components/CreateAppointment/CreateAppointmentPage";
+import GetAppointmentPage from "./components/GetAppointment/GetAppointmentPage";
+import AppointmentInfoPages from "./components/GetAppointment/AppointmentInfoPage";
+import ExampleComponent from "./components/GetPatients/ExampleComponent";
+import ExampleAppointment from "./components/GetAppointments/ExampleAppointment";
+import TwoButton from "./components/Button/TwoButton";
 
 
 
@@ -21,7 +22,10 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<PatientActions />} />
+          <Route path="/" element={<TwoButton/>}/>
+        </Routes>
+        <Routes>
+          <Route path="/patient" element={<PatientActions />} />
           <Route path="/createpatient" element={<CreatePatientPage />} />
           <Route path="/getpatient" element={<GetPatientPage />} />
           <Route path="/getpatients" element={<ExampleComponent />} />
@@ -30,7 +34,7 @@ function App() {
 
         </Routes>
         <Routes>
-          <Route path="/" element={<AppointmentActions />} />
+          <Route path="/appointment" element={<AppointmentActions />} />
           <Route path="/createappointment" element={<CreateAppointmentPage />} />
           <Route path="/getappointment" element={<GetAppointmentPage />} />
           <Route path="/getappointmentinfo" element={<AppointmentInfoPages />} />
@@ -45,9 +49,3 @@ function App() {
 }
 
 export default App;
-
-
-// "scripts": {
-//   "test": "echo \"Error: no test specified\" && exit 1",
-//   "start": "node server.js"
-// },

@@ -74,35 +74,37 @@ export default function PatientInfoPage() {
           <div className="getpatientinfo-form-group">
             <label className="getpatientinfo-label">First Name:</label>
             <input className="getpatientinfo-input" type="text" name="First_name" value={formData.First_name} onChange={handleChange} readOnly />
-
+          </div>
+          <div className="getpatientinfo-form-group">
             <label className="getpatientinfo-label">Last Name:</label>
             <input className="getpatientinfo-input" type="text" name="Last_name" value={formData.Last_name} onChange={handleChange} readOnly />
-
+          </div>
+          <div className="getpatientinfo-form-group">
             <label className="getpatientinfo-label">Email:</label>
             <input className="getpatientinfo-input" type="email" name="email" value={formData.email} onChange={handleChange} readOnly />
-
+          </div>
+          <div className="getpatientinfo-form-group">
             <label className="getpatientinfo-label">Age:</label>
             <input className="getpatientinfo-input" type="number" name="age" value={formData.age} onChange={handleChange} readOnly />
           </div>
-
           <div className="getpatientinfo-form-group">
             <label className="getpatientinfo-label">Address:</label>
             <input className="getpatientinfo-input" type="text" name="address" value={formData.address} onChange={handleChange} readOnly={!isEditing} />
-
+          </div>
+          <div className="getpatientinfo-form-group">
             <label className="getpatientinfo-label">PhoneNo:</label>
             <input className="getpatientinfo-input" type="number" name="emergency_contact" value={formData.emergency_contact} onChange={handleChange} readOnly={!isEditing} />
-
+          </div>
+          <div className="getpatientinfo-form-group">
             <label className="getpatientinfo-label">Medical History:</label>
             <input className="getpatientinfo-input" type="text" name="medical_history" value={formData.medical_history} onChange={handleChange} readOnly={!isEditing} />
           </div>
-
           <div className="getpatientinfo-button-group">
             {isEditing ? (
               <button type="button" onClick={handleUpdate}>Save</button>
             ) : (
               <button type="button" onClick={() => setIsEditing(true)}>Edit</button>
             )}
-
             <button type="button" className="delete-btn" onClick={handleDelete}>Delete</button>
           </div>
         </form>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "D:/frontend/my-app/src/Appointmentdropdown.css";
+import "./Appointmentdropdown.css"
 
 const AppointmentActions = () => {
   const [selectedAction, setSelectedAction] = useState("");
@@ -28,10 +28,12 @@ const AppointmentActions = () => {
     };
   }
   return (
-    <div className="container">
-      <h2 className="header">Appointment</h2>
+    <div className="appointment-wrapper">
+    <div className="appointment-container">
+      <h2 className="appointment-header">Appointment</h2>
+      <div className="appointment-card">
       <select
-        className="dropdown"
+        className="appointment-dropdown"
         value={selectedAction}
         onChange={(e) => setSelectedAction(e.target.value)}
       >
@@ -42,12 +44,15 @@ const AppointmentActions = () => {
         <option value="Get Appointment">Get Appointment</option>
         <option value="Get Appointments">Get Appointments</option>
 
-      </select>
-      <button className="action-button" onClick={handleAction} disabled={!selectedAction}>
+          </select>
+          
+      <button className="appointment-button" onClick={handleAction} disabled={!selectedAction}>
         Click
       </button>
-      <p id="result"></p>
-    </div>
+        <p id="result"></p>
+        </div>
+      </div>
+      </div>
   );
 };
 
