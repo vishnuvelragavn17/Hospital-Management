@@ -12,7 +12,7 @@ import AppointmentInfoPages from "./components/GetAppointment/AppointmentInfoPag
 import ExampleComponent from "./components/GetPatients/ExampleComponent";
 import ExampleAppointment from "./components/GetAppointments/ExampleAppointment";
 import TwoButton from "./components/Button/TwoButton";
-
+import Homepage from "./components/homepage/Homepage";
 
 
 
@@ -22,7 +22,10 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<TwoButton/>}/>
+            <Route path="/" element={<Homepage/>}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/twobutton" element={<TwoButton/>}/>
         </Routes>
         <Routes>
           <Route path="/patient" element={<PatientActions />} />

@@ -91,7 +91,7 @@ export default function AppointmentInfoPages() {
 
         <div className="getappointmentinfo-button-group">
           {isEditing ? (
-            <button type="button" onClick={handleUpdate}>Save</button>
+            <button type="button" className="getappointmentinfo-button"  onClick={handleUpdate}>Save</button>
           ) : (
             <button className="getappointmentinfo-button" type="button" onClick={() => setIsEditing(true)}>Edit</button>
           )}
