@@ -1,0 +1,159 @@
+.getappointmentinfo {
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden !important;
+  }
+  
+  .back-button-getappointmentinfo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: transparent;
+    border: 2px solid #007bff;
+    color: #007bff;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .back-button-getappointmentinfo:hover {
+    background: #007bff;
+    color: white;
+  }
+  
+  .getappointmentinfo-form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    backdrop-filter: blur(8px);
+    text-align: center;
+  }
+  
+  .getappointmentinfo-form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+  
+  .getappointmentinfo-label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .getappointmentinfo-input,
+  .getappointmentinfo-select {
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #f9f9f9;
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease;
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+  }
+  
+  .getappointmentinfo-input::placeholder {
+    color: #aaa;
+  }
+  
+  .getappointmentinfo-input:focus,
+  .getappointmentinfo-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .getappointmentinfo-button,
+  .getappointmentinfo-delete-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    width: 100%;
+    height: 46px;
+    margin-top: 10px;
+  }
+  
+  .getappointmentinfo-button:hover,
+  .getappointmentinfo-delete-btn:hover {
+    background: #0056b3;
+  }
+  
+  .getappointmentinfo-delete-btn {
+    background-color: #dc3545; /* Red color for delete button */
+  }
+  
+  .getappointmentinfo-delete-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+  }
+  
+  .getappointmentinfo-button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .getappointmentinfo-center-text {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 480px) {
+    .getappointmentinfo {
+      padding: 10px;
+    }
+  
+    .getappointmentinfo-form {
+      width: 95%;
+      max-width: 90%;
+      padding: 24px;
+    }
+  
+    .getappointmentinfo-button,
+    .getappointmentinfo-delete-btn {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .back-button-getappointmentinfo {
+      left: 10px;
+      top: 10px;
+      font-size: 12px;
+      padding: 6px 14px;
+    }
+  }  

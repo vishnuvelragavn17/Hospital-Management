@@ -1,0 +1,86 @@
+/* GetAppointmentPage.css */
+
+.getappointment {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb); /* Sky Blue Gradient */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: #003366; /* Dark Blue for text contrast */
+}
+
+.back-button-getappointment {
+  background: transparent;
+  border: 2px solid #003366;
+  color: #003366;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.back-button-getappointment:hover {
+  background: #003366;
+  color: #ffffff;
+}
+
+.getappointment form {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.getappointment input {
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #003366;
+  outline: none;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.getappointment input::placeholder {
+  color: rgba(0, 51, 102, 0.6);
+}
+
+.getappointment input:focus {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 5px rgba(0, 51, 102, 0.5);
+}
+
+.getappointment button {
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.getappointment button:hover {
+  background: #0056b3;
+}
+
+.getappointment p {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  color: red;
+}

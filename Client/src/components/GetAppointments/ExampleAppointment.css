@@ -1,0 +1,87 @@
+.getappointments-table-container {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+.getappointments-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.getappointments-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.getappointments-table thead {
+    background-color: #007bff;
+    color: white;
+    text-align: left;
+}
+
+.getappointments-table th,
+.getappointments-table td {
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    font-size: 16px;
+}
+
+.getappointments-table th {
+    font-weight: bold;
+}
+
+.getappointments-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.getappointments-table tbody tr:hover {
+    background-color: #e2e6ea;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.getappointments-table td {
+    color: #333;
+}
+
+/* Make table responsive */
+@media (max-width: 768px) {
+    .getappointments-table-container {
+        padding: 10px;
+    }
+
+    .getappointments-table th,
+    .getappointments-table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+.back-button-getappointments {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: 20px;
+}
+
+.back-button-getappointments:hover {
+    background-color: #0056b3;
+}

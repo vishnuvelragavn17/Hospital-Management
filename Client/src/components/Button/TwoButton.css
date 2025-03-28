@@ -1,0 +1,66 @@
+/* Patient Appointment Container */
+.patientAppointment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+    background: linear-gradient(135deg, #f0f4ff, #c2d3ff);
+}
+
+/* Patient Button */
+.patientButton {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0044cc;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 68, 204, 0.4);
+}
+
+.patientButton:hover {
+    background-color: #0033a1;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 68, 204, 0.6);
+}
+
+/* Appointment Button */
+.appointmentButton {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #0044cc;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #0044cc;
+    box-shadow: 0 4px 10px rgba(0, 68, 204, 0.2);
+}
+
+.appointmentButton:hover {
+    background-color: #0044cc;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 68, 204, 0.5);
+}

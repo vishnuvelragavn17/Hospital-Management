@@ -1,8 +1,8 @@
 const Patient = require('../models/patientModel');
 
 class PatientService {
-    static async createPatient(pateintData) {
-        const newPatient = new Patient(pateintData);
+    static async createPatient(patientData) {
+        const newPatient = new Patient(patientData);
         const savedPatient = await newPatient.save();
         return savedPatient;
     }

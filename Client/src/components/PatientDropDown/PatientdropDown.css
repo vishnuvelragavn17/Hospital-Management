@@ -1,0 +1,120 @@
+/* Main container with gradient background */
+.patient-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #eef4ff, #d2e4ff); /* Light blue gradient from image */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Container */
+.patient-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Header */
+.patient-header {
+    font-size: 28px;
+    font-weight: bold;
+    color: #003c8f; /* Deep blue for healthcare theme */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Card */
+.patient-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.patient-card:hover {
+    transform: scale(1.03);
+}
+
+/* Dropdown container */
+.patient-dropdown {
+    position: relative;
+    width: 100%;
+}
+
+/* Dropdown */
+.patient-dropdown {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #003c8f;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #003c8f;
+    background: #e3f2fd;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    appearance: none;
+}
+
+/* Dropdown Icon */
+.patient-dropdown::after {
+    content: "▼"; /* Simple downward arrow */
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #003c8f;
+    pointer-events: none;
+}
+
+/* Button */
+.patient-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #003c8f;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 60, 143, 0.3);
+}
+
+.patient-button:hover {
+    background: #002366;
+    box-shadow: 0 6px 15px rgba(0, 60, 143, 0.5);
+    transform: translateY(-2px);
+}
+
+.patient-button:disabled {
+    background: #b2dfdb;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Result paragraph styling (if needed) */
+#result {
+    margin-top: 10px;
+    color: #333;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .patient-card {
+        width: 90%;
+        padding: 20px;
+    }
+}

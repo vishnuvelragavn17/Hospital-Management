@@ -1,0 +1,143 @@
+/* Full-page container (No Scrollbar, Proper Centering) */
+.createappointment-container {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Completely Remove Scrolling */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden !important;
+}
+
+/* Back Button (Properly Positioned) */
+.createappointment-backbutton {
+  position: absolute;
+  top: 15px; /* Increased spacing */
+  left: 15px; /* Increased spacing */
+  background: transparent;
+  border: 2px solid #007bff;
+  color: #007bff;
+  padding: 8px 16px; /* Increased padding */
+  font-size: 14px; /* Increased font size */
+  cursor: pointer;
+  border-radius: 8px; /* Increased border radius */
+  transition: all 0.3s ease;
+}
+
+.createappointment-backbutton:hover {
+  background: #007bff;
+  color: white;
+}
+
+/* Form Wrapper - Fully Centered */
+.createappointment-form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 28px; /* Further increased padding */
+  border-radius: 12px; /* Further increased border radius */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adjusted shadow */
+  width: 100%;
+  max-width: 450px; /* Further increased max-width */
+  display: flex;
+  flex-direction: column;
+  gap: 14px; /* Increased gap */
+  backdrop-filter: blur(8px);
+  text-align: center;
+}
+
+/* Form Fields Properly Aligned */
+.createappointment-field {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+.createappointment-field label {
+  font-size: 14px; /* Increased font size */
+  margin-bottom: 5px; /* Increased spacing */
+  color: #333;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Input Fields - Same Size */
+.createappointment-input,
+.createappointment-select {
+  padding: 10px 12px; /* Increased padding */
+  font-size: 14px; /* Increased font size */
+  border: 1px solid #ccc;
+  border-radius: 6px; /* Increased border radius */
+  background: #f9f9f9;
+  color: #333;
+  outline: none;
+  transition: all 0.3s ease;
+  width: 100%;
+  height: 42px; /* Increased height */
+  box-sizing: border-box;
+}
+
+.createappointment-input::placeholder {
+  color: #aaa;
+}
+
+.createappointment-input:focus,
+.createappointment-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Adjusted shadow */
+}
+
+/* Submit Button */
+.createappointment-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px; /* Increased padding */
+  font-size: 16px; /* Increased font size */
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px; /* Increased border radius */
+  transition: all 0.3s ease;
+  width: 100%;
+  height: 46px; /* Increased height */
+}
+
+.createappointment-button:hover {
+  background: #0056b3;
+}
+
+/* Responsive Fixes */
+@media (max-width: 480px) {
+  .createappointment-container {
+    padding: 10px;
+  }
+
+  .createappointment-form {
+    width: 95%;
+    max-width: 90%; /* Maintained responsive behavior */
+    padding: 24px; /* Adjusted padding for smaller screens */
+  }
+
+  .createappointment-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* Adjust Back Button on Small Screens */
+  .createappointment-backbutton {
+    left: 10px;
+    top: 10px;
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+}
